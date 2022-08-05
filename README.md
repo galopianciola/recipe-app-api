@@ -1,7 +1,13 @@
 # recipe-app-api
 Recipe API DRF project
 
-### Start Django project inside container
+### Run tests inside container
 ```
-docker-compose run --rm app sh -c "django-admin startproject app ."
+docker-compose run --rm app sh -c "python manage.py test"
+```
+
+
+### Migrate (waiting for db)
+```
+docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py migrate"
 ```
