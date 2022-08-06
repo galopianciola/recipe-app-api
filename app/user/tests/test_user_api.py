@@ -27,6 +27,7 @@ class PublicUserApiTests(TestCase):
         '''Test creating a user is successful.'''
         payload = {
             'email': 'test@example.com',
+            'password': 'testpass123',
             'name': 'Test name',
         }
         res = self.client.post(CREATE_USER_URL, payload)
