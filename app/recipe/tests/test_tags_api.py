@@ -41,12 +41,12 @@ class PublicTagsApiTests(TestCase):
 
 class PrivateTagsApiTests(TestCase):
     '''Test authenticated API requests.'''
-    
+
     def setUp(self):
         self.user = create_user()
         self.client = APIClient()
         self.client.force_authenticate(self.user)
-    
+
     def test_retrieve_tags(self):
         '''Test retrieving a list of tags.'''
         Tag.objects.create(user=self.user, name='Vegan')

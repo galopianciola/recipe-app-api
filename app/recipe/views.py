@@ -1,7 +1,6 @@
 '''
 Views for the recipe APIs.
 '''
-from tokenize import Token
 from rest_framework import (
     viewsets,
     mixins,
