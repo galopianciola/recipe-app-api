@@ -1,7 +1,7 @@
 # recipe-app-api
 Recipe API DRF project
 
-> Todos los comandos con `docker-compose run --rm app sh -c` serán ejecutados dentro del container de `app`, y luego será eliminado (`--rm`)
+> Every command starting with `docker-compose run --rm app sh -c` will be executed inside `app` container and then removed (`--rm`)
 
 ### Run tests inside container
 ```
